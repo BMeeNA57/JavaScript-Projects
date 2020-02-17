@@ -1,0 +1,50 @@
+<!DOCTYPE hmtl>
+<html lang="en">
+	<head>
+        <link href="CSS/Basic_CSS_1.css" rel="stylesheet" type="text/css">
+		<title>Write title here.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+	</head>
+	<body>
+        <script src="JS/Basic_JavaScript_9.js"></script>
+        <p> How many seconds would you like to set your alarm for?</p>
+        <input id="seconds" value="" />
+        <button onclick="countdown()">Click Here</button>
+        <p id="timer"></p>
+<!--Slide Show Start-->
+ <p> Click a Dot to Start a Slide Show </p>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="IMG/rooster.jpg" style="width:100%">
+              <div class="text">Rooster</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="IMG/moon.jpg" style="width:100%">
+              <div class="text">Moon</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="IMG/tennis.jpg" style="width:100%">
+              <div class="text">Tennis</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+        </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+<!--End Slide Show-->
+</body>
+</html>
