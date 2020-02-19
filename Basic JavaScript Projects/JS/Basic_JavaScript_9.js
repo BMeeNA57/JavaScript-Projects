@@ -3,7 +3,7 @@ function countdown() {
 
     function tick() {
         seconds = seconds -1;
-        timer.innerhtml = seconds;
+        timer.innerHTML = seconds;
         setTimeout(tick, 1000);
     if(seconds == -1) {
         alert("Time is up!");
@@ -38,6 +38,5 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-
-    
 }
+    
