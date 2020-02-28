@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Jquery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+
+<script>
+$(document).ready(function() {
+    $("html").append(
+        "<body>\
+            <div id='container'>\
+                <div id='inner'>\
+                    <h1>Basic jQuery</h1>\
+                    <p id='1'>Paragraph 1</p>\
+                    <p id='2'>Paragraph 2</p>\
+                    <p id='3'>Paragraph 3</p>\
+                </div>\
+            </div>\
+        </body>"
+    );
+    $("#2").css({"color":"red"});
+    $("#3").click(function(){
+        $('h1').hide();
+    });
+    $( "p" ).click(function() {
+    console.log( "You clicked a paragraph!" );
+});
+    $( "p" ).fadeOut( 5000 );
+});
+
+
+
+
+
+</script>
+</body>
+</html>
